@@ -1,0 +1,12 @@
+version: "2"
+
+volumes:
+  data: {}
+
+services:
+  samba:
+    build: samba
+    volumes:
+      - data:/samba
+    env_file: .env
+
